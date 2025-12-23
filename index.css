@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0f;
+  color: #a1a1aa;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overscroll-behavior-y: contain;
+}
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Pro Content Typography */
+.prose {
+  color: #d4d4d8 !important;
+  font-size: 0.9rem !important;
+}
+.prose strong {
+  color: #f59e0b !important;
+  font-weight: 800;
+}
+.prose h1, .prose h2, .prose h3 {
+  color: #fff !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  font-size: 1rem !important;
+}
+.prose p {
+  margin-bottom: 0.8em !important;
+  line-height: 1.6 !important;
+}
+.prose code {
+  background: #18181b !important;
+  color: #f59e0b !important;
+  padding: 0.2rem 0.4rem !important;
+  border-radius: 4px !important;
+  font-family: 'Monaco', monospace;
+  font-size: 0.8rem !important;
+}
+
+/* Industrial Accents */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.selection\:bg-amber-500\/30 ::selection {
+  background-color: rgba(245, 158, 11, 0.3);
+  color: #fde68a;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(2); }
+}
+
+/* Custom Input Focus Glow */
+input:focus + button {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+.animate-in {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}

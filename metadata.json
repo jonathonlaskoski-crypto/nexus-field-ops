@@ -1,0 +1,10 @@
+
+{
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "name": "Nexus Field Ops",
+  "description": "Industrial-grade field service and management suite."
+}

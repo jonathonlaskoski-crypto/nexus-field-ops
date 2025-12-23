@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Nexus Field Ops</string>
+    <string name="title_activity_main">Nexus Field Ops</string>
+    <string name="package_name">com.nexusops.fieldtech</string>
+    <string name="custom_url_scheme">com.nexusops.fieldtech</string>
+</resources>
